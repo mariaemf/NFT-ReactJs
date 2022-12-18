@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Container } from "reactstrap";
-import "../Header/header.css";
+import "./header.css";
 
 const NAV__LINKS = [
   {
