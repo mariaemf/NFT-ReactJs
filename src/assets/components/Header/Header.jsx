@@ -40,21 +40,27 @@ const Header = () => {
             <ul className="nav__list">
               {NAV__LINKS.map((item, index) => (
                 <li className="nav__item" key={index}>
-                  <NavLink to={item.url}>{item.display}</NavLink>
+                  <NavLink
+                    to={item.url}
+                    className={(navClass) =>
+                      navClass.isActive ? "active" : ""
+                    }
+                  >
+                    {item.display}
+                  </NavLink>
                 </li>
               ))}
             </ul>
           </div>
 
           <div className="nav__right d-flex aling-items-center gap-5">
-            <button className="btn">
-              <Link to="/wallet" className="d-flex gap-2 aling-items-center">
-                <span>
-                  <i class="ri-wallet-line"></i>
-                </span>
-              </Link>{" "}
-              Connect Wallet
+            <button className="btn d-flex gap-2 aling-items-center">
+              <span>
+                <i class="ri-wallet-line"></i>
+              </span>
+              <Link to="/wallet">Connect Wallet </Link>
             </button>
+
             <span className="mobile__menu">
               <i class="ri-menu-line"></i>
             </span>
