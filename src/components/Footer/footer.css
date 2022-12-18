@@ -1,0 +1,70 @@
+.footer h5 {
+  font-size: 1.1rem;
+  /* para definir tamanho da fonte*/
+  color: #fff;
+}
+
+.footer {
+  padding-bottom: 30px;
+}
+
+.list__item {
+  background: transparent;
+  padding-left: 0 !important;
+  /* representa distancia no lado esquerdo do box */
+  border: none !important;
+}
+
+.list__item a {
+  text-decoration: none;
+  opacity: 85%;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.list__item a:hover {
+  opacity: 85%;
+  color: #fff;
+}
+
+.newsletter {
+  width: 100%;
+  border-radius: 50px;
+  color: #fff;
+  padding: 7px 25px;
+  /* define uma distancia entre o conteudo do elemento e suas bordas*/
+  margin-top: 20px;
+  /* distancia entre a margem do topo do elemento */
+  margin-bottom: 20px;
+  /* margim na parte inferior do elemento */
+  border: none;
+  /* nenhuma linha será desenhada ao redor do elemento*/
+  outline: none;
+  /* remover um comportamento padrão do browser de adc uma borda a um elemento quando ele é selecionado */
+  font-size: .8rem;
+  background: #343444;
+}
+
+::placeholder {
+  /* dica do que o usuário deve descrever no text*/
+  opacity: 85%;
+  color: #fff;
+}
+
+.social__links span a {
+  text-decoration: none;
+  /* para defirnir formatação do texto */
+  color: #fff;
+  opacity: 85%;
+  font-size: 1.2rem;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+.social__links span a:hover {
+  color: #e250e5;
+}
+
+.copyright {
+  font-size: .8rem;
+}

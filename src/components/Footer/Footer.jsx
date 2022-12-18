@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Col, Container, ListGroup, ListGroupItem, Row } from "reactstrap";
+import "./footer.css";
 
 const MY__ACCOUNT = [
   {
@@ -28,6 +29,10 @@ const RESOURCES = [
   },
   {
     display: "Partner",
+    url: "#",
+  },
+  {
+    display: "Community",
     url: "#",
   },
   {
@@ -139,6 +144,13 @@ const Footer = () => {
                 </Link>
               </span>
             </div>
+          </Col>
+          <Col lg="12" className="mt-4 text-center">
+            <p className="copyright">
+              {" "}
+              Copyrights 2022, Developed by Maria Freitas. @Mariaemf Tech Diary
+              All Rights Reserved.{" "}
+            </p>
           </Col>
         </Row>
       </Container>
