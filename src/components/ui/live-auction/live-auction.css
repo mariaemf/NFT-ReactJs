@@ -1,0 +1,44 @@
+.single__nft__card {
+  padding: 20px;
+  background: #343444;
+  border-radius: 10px;
+}
+
+.nft__img img {
+  border-radius: 15px;
+}
+
+.nft__img {
+  margin-bottom: 10px;
+  /*define a margin area na parte inferior de um elemento*/
+}
+
+.nft__title {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.creator__img {
+  width: 40px;
+  /* determina a largura da área do conteudo */
+  height: 40px;
+  /*definem altura do boxes*/
+}
+
+.creator__info h6 {
+  font-size: 0.7rem;
+  color: #fff;
+  opacity: 80%;
+  margin-bottom: 0;
+  /* define área nno interior do elemento*/
+  font-weight: 300;
+}
+
+.creator__info p {
+  font-size: 0.9rem;
+  color: #fff;
+  opacity: 100%;
+  margin-bottom: 0;
+  font-weight: 500;
+}
