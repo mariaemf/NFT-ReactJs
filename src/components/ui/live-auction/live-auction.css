@@ -42,3 +42,44 @@
   margin-bottom: 0;
   font-weight: 500;
 }
+
+.bid__btn {
+  border: none;
+  outline: none;
+  padding: 5px 22px;
+  /* define distância entre o conteúdo de um elemento e suas bordas */
+  background: transparent;
+  border: 1px solid #5142fc;
+  font-size: 0.9rem;
+  color: #fff;
+  border-radius: 50px;
+  transition: 0.3s;
+  /* tempo de transição do hover*/
+  background: #5142fc;
+}
+
+.bid__btn:hover {
+  background: #fff;
+  color: #5142fc;
+}
+
+.history__link {
+  text-decoration: none;
+  color: #fff;
+  opacity: 85%;
+  font-size: 0.9rem;
+}
+
+.history__link a:hover {
+  color: #5142fc;
+}
+
+.live__auction__top h3 {
+  color: #fff;
+}
+
+.live__auction__top span a {
+  text-decoration: none;
+  color: #fff;
+
+}

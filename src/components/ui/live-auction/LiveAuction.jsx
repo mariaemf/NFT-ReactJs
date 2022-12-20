@@ -10,7 +10,7 @@ const LiveAuction = () => {
     <section>
       <Container>
         <Row>
-          <Col lg="12" className="mb-7">
+          <Col lg="12" className="mb-5">
             <div className="live__auction__top d-flex aling-items-center justify-content-between">
               <h3>Live Auction</h3>
               <span>
@@ -46,11 +46,13 @@ const LiveAuction = () => {
                   </div>
                 </div>
 
-                <div className="d-flex align-items-center justify-content-between">
-                  <button className="bid__btn d-flex align-items-center gap-2">
+                <div className="mt-3 d-flex align-items-center justify-content-between">
+                  <button className="bid__btn d-flex align-items-center gap-1">
                     <i class="ri-shopping-bag-line"></i>Place Bid
-                    <span></span>
                   </button>
+                  <span className="history__link">
+                    <Link to="#">View History</Link>
+                  </span>
                 </div>
               </div>
             </div>
