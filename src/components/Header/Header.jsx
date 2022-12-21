@@ -36,9 +36,8 @@ const Header = () => {
         headerRef.current.classList.remove("header__shrink");
       }
     });
-    return () => {
-      window.removeEventListener("scroll");
-    };
+
+    return () => window.removeEventListener("scroll");
   }, []);
 
   return (

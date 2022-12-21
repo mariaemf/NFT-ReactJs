@@ -1,0 +1,32 @@
+.single__step__item {
+  background: #343444;
+  border-radius: 5px;
+  padding: 20px;
+
+}
+
+.step__title {
+  color: #fff;
+}
+
+.step__item__content h5 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.single__step__item span i {
+  color: #fff;
+  padding: 15px;
+  /* define distãncia entre o conteúdo de ume elemento e suas bordas*/
+  font-size: 1.5rem;
+  /* tamanho da fonte */
+  background: #5142fc;
+  border-radius: 5px;
+  /* arredondamento das bordar*/
+
+}
+
+.step__item__content {
+  margin-top: 15px !important;
+  /* indica espaço acima do elemento */
+}
