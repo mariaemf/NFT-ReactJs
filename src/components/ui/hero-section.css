@@ -65,3 +65,23 @@
 .hero__img img {
   border-radius: 7px;
 }
+
+@media only screen and (max-width: 768px) {
+
+  .hero__img {
+    width: 300px;
+  }
+
+  .hero__content h2 {
+    font-size: 1.5rem;
+    line-height: 40px;
+    /*line-height permite controlar o espaçamento entre as linhas de texto*/
+  }
+
+  .hero__content p {
+    font-size: .8rem;
+    line-height: 25px;
+  }
+
+
+}

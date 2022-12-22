@@ -92,3 +92,58 @@
   font-size: 1.3rem;
   display: none;
 }
+
+@media only screen and (max-width: 768px) {
+  /* A palavra chave only previne que navegadores antigos que não suportam media queries com media features de aplicar os estilos dados */
+
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* determina a largura da área de conteúdo de elemento */
+    height: 100%;
+    /* especifica altura da imagem em pixels */
+    background: linear-gradient(#14141f83, #14141f);
+    z-index: 222222;
+    /* especifica a ordem da pilha de um elemento */
+    display: none;
+  }
+
+  .active__menu {
+    display: block;
+  }
+
+  .nav__list {
+    position: absolute;
+    top: 0;
+    /* usado para determinar o posicionamento dos elementos na página */
+    right: 0;
+    /* determina posição do lado direito da pagina */
+    width: 250px;
+    height: 100%;
+    background: #343444;
+    z-index: 333333;
+    flex-direction: column;
+    /* permite alterar a direção na qual os elementos flex serão exibidos ao longo do eixo principal */
+    padding-top: 40px;
+    /* defie distancia entre conteúdo de um elemento e suas bordas */
+    /*line-height: 40px;
+    /* permite controlar espaçamento entre linhas de um texto*/
+  }
+
+  .mobile__menu {
+    display: block;
+    /* faz c q o elemento html seja renderizado como bloco*/
+  }
+
+  .btn {
+    padding: 4px 25px !important;
+  }
+
+  .btn a {
+    font-size: .7rem !important;
+  }
+
+
+}

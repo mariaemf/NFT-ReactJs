@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from "react";
-import { Link, NavLink } from "react-router-dom";
 import { Container } from "reactstrap";
 import "./header.css";
+
+import { Link, NavLink } from "react-router-dom";
 
 const NAV__LINKS = [
   {
@@ -25,6 +26,8 @@ const NAV__LINKS = [
 const Header = () => {
   const headerRef = useRef(null);
 
+  const menuRef = useRef(null);
+
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (
@@ -37,15 +40,19 @@ const Header = () => {
       }
     });
 
-    return () => window.removeEventListener("scroll");
+    return () => {
+      window.removeEventListener("scroll");
+    };
   }, []);
+
+  const toggleMenu = () => menuRef.current.classList.toggle("active__menu");
 
   return (
     <header className="header" ref={headerRef}>
       <Container>
         <div className="navigation">
           <div className="logo">
-            <h2 className="d-fex gap-2 aling-items-center">
+            <h2 className=" d-flex gap-2 align-items-center ">
               <span>
                 <i class="ri-fire-fill"></i>
               </span>
@@ -53,7 +60,7 @@ const Header = () => {
             </h2>
           </div>
 
-          <div className="nav__menu">
+          <div className="nav__menu" ref={menuRef} onClick={toggleMenu}>
             <ul className="nav__list">
               {NAV__LINKS.map((item, index) => (
                 <li className="nav__item" key={index}>
@@ -70,16 +77,16 @@ const Header = () => {
             </ul>
           </div>
 
-          <div className="nav__right d-flex aling-items-center gap-5">
-            <button className="btn d-flex gap-2 aling-items-center">
+          <div className="nav__right d-flex align-items-center gap-5 ">
+            <button className="btn d-flex gap-2 align-items-center">
               <span>
                 <i class="ri-wallet-line"></i>
               </span>
-              <Link to="/wallet">Connect Wallet </Link>
+              <Link to="/wallet">Connect Wallet</Link>
             </button>
 
             <span className="mobile__menu">
-              <i class="ri-menu-line"></i>
+              <i class="ri-menu-line" onClick={toggleMenu}></i>
             </span>
           </div>
         </div>

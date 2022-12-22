@@ -10,7 +10,7 @@ const STEP__DATA = [
     icon: "ri-wallet-line",
   },
   {
-    title: "Create your collection",
+    title: "Create  collection",
     desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur eos ad earum distinctio. Distinctio",
     icon: "ri-layout-masonry-line",
   },
