@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./nft-card.css";
 
 const NftCard = (props) => {
   const { title, id, currentBid, creatorImg, imgUrl, creator } = props.item;
