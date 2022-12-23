@@ -7,29 +7,32 @@
   /* determina largura da área de conteúdo de um elemento*/
   height: 100%;
   /*Define altura do elemento dentro do boxe*/
-  background: #14141fc9;
+  background: #14141f8a;
   z-index: 4444444;
   /*Especifica a ordem da pilha de um elemento*/
 }
 
 .single__modal {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   width: 500px;
   height: 500px;
   transform: translate(-50%, -50%);
   /*Permite modificar o espaço coordenado do modelo de formatação*/
-  background: #343444;
+  background: #343444 !important;
   border-radius: 5px;
   padding: 30px;
   /*define distância entre conteúdo de um elemento e suas bordas*/
-  z-index: 5555555;
+  z-index: 5555555 !important;
+  cursor: pointer;
 }
 
 .single__modal h6 {
   font-style: 1.1rem;
   font-weight: 500;
+  margin-bottom: 10px;
+  /*Define a margim area na parte inferior do elemento*/
 }
 
 .single__modal .money {
@@ -41,12 +44,13 @@
 
 .input__item input {
   width: 100%;
-  border: 1px solid #ddd;
+  border: 1px solid rgba(221, 221, 221, 0.274);
   background: transparent;
   color: #fff;
-  padding: 8px 25px;
+  padding: 9px 25px;
   border-radius: 5px;
   outline: none;
+  font-size: .8rem;
 }
 
 .input__item h6 {
@@ -65,6 +69,48 @@
   border-radius: 50px;
   font-size: 0.8rem;
   display: block;
+  margin-top: 15px;
+}
 
+.close__modal {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  z-index: 5555555;
+}
 
+.close__modal i {
+  padding: 5px;
+  background: #5142fc;
+  color: #fff;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 992px) {
+  .single__modal {
+    width: 300px;
+    height: auto;
+  }
+
+  .single__modal h6 {
+    font-style: .9rem;
+  }
+
+  .close__modal p {
+    font-size: .8rem;
+    margin-bottom: 0 !important;
+  }
+
+  .money {
+    font-size: 0.8rem !important;
+  }
+
+  .input__item h6 {
+    font-size: .7rem;
+  }
+
+  .input__item input {
+    padding: 5px 20px;
+    font-size: .7rem !important;
+  }
 }
