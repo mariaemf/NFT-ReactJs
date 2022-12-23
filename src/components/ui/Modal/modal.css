@@ -1,0 +1,70 @@
+.modal__wrapper {
+  position: fixed;
+  top: 0;
+  /*Indica espaço acima do elemento*/
+  left: 0;
+  width: 100%;
+  /* determina largura da área de conteúdo de um elemento*/
+  height: 100%;
+  /*Define altura do elemento dentro do boxe*/
+  background: #14141fc9;
+  z-index: 4444444;
+  /*Especifica a ordem da pilha de um elemento*/
+}
+
+.single__modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  transform: translate(-50%, -50%);
+  /*Permite modificar o espaço coordenado do modelo de formatação*/
+  background: #343444;
+  border-radius: 5px;
+  padding: 30px;
+  /*define distância entre conteúdo de um elemento e suas bordas*/
+  z-index: 5555555;
+}
+
+.single__modal h6 {
+  font-style: 1.1rem;
+  font-weight: 500;
+}
+
+.single__modal .money {
+  color: #fff;
+  font-weight: 500;
+  /*Especifica o peso ou a intensidade da fonte*/
+  font-size: 1.1rem;
+}
+
+.input__item input {
+  width: 100%;
+  border: 1px solid #ddd;
+  background: transparent;
+  color: #fff;
+  padding: 8px 25px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.input__item h6 {
+  font-size: .9rem;
+  color: #fff;
+}
+
+.place__bid-btn {
+  padding: 7px 25px;
+  border: none;
+  outline: none;
+  width: 120px;
+  margin: auto;
+  background: #5142fc;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  display: block;
+
+
+}

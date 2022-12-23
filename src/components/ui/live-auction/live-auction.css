@@ -56,16 +56,17 @@
 .bid__btn {
   border: none;
   outline: none;
-  padding: 5px 22px;
+  padding: 7px 12px;
   /* define distância entre o conteúdo de um elemento e suas bordas */
   background: transparent;
   border: 1px solid #5142fc;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   color: #fff;
-  border-radius: 50px;
+  border-radius: 70px;
   transition: 0.3s;
   /* tempo de transição do hover*/
   background: #5142fc;
+
 }
 
 .bid__btn:hover {

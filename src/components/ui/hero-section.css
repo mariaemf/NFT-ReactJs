@@ -25,6 +25,7 @@
 
 .hero__btns {
   margin-top: 40px;
+
 }
 
 .explore__btn,
@@ -38,6 +39,8 @@
   border: 1px solid #5142fc !important;
   font-size: .9rem;
   background: transparent;
+  border-radius: 50px;
+  font-size: .8rem;
 }
 
 .explore__btn i,
@@ -104,6 +107,8 @@
   .create__btn,
   .explore__btn {
     padding: 4px 25px !important;
+    border-radius: 50px;
+    font-size: .8rem;
   }
 
   .create__btn a,
