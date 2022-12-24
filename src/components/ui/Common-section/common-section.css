@@ -1,0 +1,9 @@
+.common__section {
+  background: url('../../../assets/images/bg.jpg');
+  background-position: center center;
+  /*define onde a imagem de fundo é posicionada*/
+  background-repeat: no-repeat;
+  /*para definir a maneira que a imagemserá repetida no elemento*/
+  background-size: cover;
+  /* fazer com que a imagem de fundo ocupe o máximo possível a área onde ela foi aplicada e também manter a proporção da imagem.*/
+}
