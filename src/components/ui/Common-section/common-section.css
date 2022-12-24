@@ -6,4 +6,10 @@
   /*para definir a maneira que a imagemserá repetida no elemento*/
   background-size: cover;
   /* fazer com que a imagem de fundo ocupe o máximo possível a área onde ela foi aplicada e também manter a proporção da imagem.*/
+  padding-top: 120px;
+}
+
+.common__section h2 {
+  color: #fff;
+
 }
