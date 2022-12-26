@@ -3,6 +3,7 @@ import { Col, Container, Row } from "reactstrap";
 import { NFT__DATA } from "../assets/data/data";
 import CommonSection from "../components/ui/Common-section/CommonSection";
 import NftCard from "../components/ui/Nft-card/NftCard";
+import "../styles/market.css";
 
 const Market = () => {
   const handleCategory = () => {};

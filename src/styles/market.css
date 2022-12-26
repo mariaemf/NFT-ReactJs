@@ -1,0 +1,14 @@
+.all_categorry__filter select,
+.all_items__filter select,
+.filter__right select {
+  padding: 8px 25px;
+  /*padding serve para definir distancia entre conteúdo e sua borda*/
+  font-size: .9rem;
+  /*para regular o tamanho da fonte*/
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: #343444;
+  border-radius: 5px;
+}
