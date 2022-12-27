@@ -1,4 +1,6 @@
-import React from "react";
+import React, {
+  useState,
+} from "react"; /*useState permite a criacao d eum estado no componenete atraves de função*/
 import { Col, Container, Row } from "reactstrap";
 import { NFT__DATA } from "../assets/data/data";
 import CommonSection from "../components/ui/Common-section/CommonSection";
@@ -6,11 +8,38 @@ import NftCard from "../components/ui/Nft-card/NftCard";
 import "../styles/market.css";
 
 const Market = () => {
+  const [data, setData] = useState(NFT__DATA);
+
   const handleCategory = () => {};
 
   const handleItems = () => {};
 
-  const handleSort = () => {};
+  // === sorting data by high, mid, low rate ===
+  const handleSort = (e) => {
+    const filterValue = e.target.value;
+
+    if (filterValue === "high") {
+      const filterData = NFT__DATA.filter((item) => item.currentBid > 6);
+
+      setData(filterData);
+    }
+
+    if (filterValue === "mid") {
+      const filterData = NFT__DATA.filter(
+        (item) => item.currentBid > 5.5 && item.currentBid < 6
+      );
+
+      setData(filterData);
+    }
+
+    if (filterValue === "low") {
+      const filterData = NFT__DATA.filter(
+        (item) => item.currentBid > 4.89 && item.currentBid < 5.5
+      );
+
+      setData(filterData);
+    }
+  };
 
   return (
     <>
@@ -45,14 +74,14 @@ const Market = () => {
                 <div className="filter__right">
                   <select onChange={handleSort}>
                     <option>Sort By</option>
-                    <option value="hight">Hight Rate</option>
+                    <option value="high">High Rate</option>
                     <option value="mid">Mid Rate</option>
                     <option value="low">Low Rate</option>
                   </select>
                 </div>
               </div>
             </Col>
-            {NFT__DATA.map((item) => (
+            {data?.map((item) => (
               <Col lg="3" md="4" sm="6" className="mb-4" key={item.id}>
                 <NftCard item={item} />
               </Col>
