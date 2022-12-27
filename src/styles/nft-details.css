@@ -8,7 +8,7 @@
   /* defini distancia entre p conteudo de um elemento e suas bordas*/
   background: #000;
   border-radius: 50px;
-  /*par aarredondar borda*/
+  /*para aarredondar borda*/
   cursor: pointer;
 }
 
@@ -25,6 +25,74 @@
   /* defini distancia entre p conteudo de um elemento e suas bordas*/
   background: #000;
   border-radius: 50px;
-  /*par aarredondar borda*/
+  /*para aarredondar borda*/
   cursor: pointer;
+}
+
+.creator__img {
+  width: 40px;
+  height: 40px;
+}
+
+.nft__creator {
+  background: #343444;
+  padding: 15px;
+  border-radius: 7px;
+  width: 50%;
+}
+
+
+.creator__detail p {
+  font-size: .7rem;
+  /*para definir o tam da fonte e letra*/
+  font-weight: 300;
+  /*para defirnir 'peso' da fonte*/
+  margin-bottom: 0;
+  /* define margin para area inferior do elemento*/
+  margin-top: 0;
+}
+
+.creator__detail h6 {
+  color: #fff;
+  margin-bottom: 0;
+  font-size: .9rem;
+  font-weight: 500;
+
+}
+
+.singleNft-btn {
+  padding: 8px 25px;
+  background: #5142fc;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+
+
+  transition: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.singleNft-btn a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.singleNft-btn:hover {
+  background: #fff;
+}
+
+.singleNft-btn:hover a {
+  color: #5142fc;
+}
+
+.singleNft-btn i {
+  color: #fff;
+
+}
+
+.singleNft-btn:hover i {
+  color: #5142fc;
 }

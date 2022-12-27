@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
 import { NFT__DATA } from "../assets/data/data";
 import CommonSection from "../components/ui/Common-section/CommonSection";
@@ -30,7 +30,7 @@ const NftDetails = () => {
               <div className="single__nft__content">
                 <h2>{singleNft.title}</h2>
 
-                <div className="d-flex align-items-center justify-content-between">
+                <div className="d-flex align-items-center justify-content-between mt-4 mb-4">
                   <div className="d-flex align-items-center gap-4 single__nft-seen">
                     <span>
                       {" "}
@@ -52,15 +52,20 @@ const NftDetails = () => {
                   </div>
                 </div>
 
-                <div className="nft__creator">
+                <div className="nft__creator d-flex gap-3 align-items-center">
                   <div className="creator__img">
-                    <img src={singleNft.creatorImg} alt="" />
+                    <img src={singleNft.creatorImg} alt="" className="w-100" />
                   </div>
                   <div className="creator__detail">
                     <p>Created By</p>
                     <h6>{singleNft.creator}</h6>
                   </div>
                 </div>
+                <p className="my-4">{singleNft.desc}</p>
+                <button className="singleNft-btn d-flex align-items-center gap-2 w-100">
+                  <i class="ri-shopping-bag-line"></i>
+                  <Link to="./wallet">Place a Bid</Link>
+                </button>
               </div>
             </Col>
           </Row>
