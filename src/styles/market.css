@@ -12,3 +12,16 @@
   background: #343444;
   border-radius: 5px;
 }
+
+
+@media only screen and (max-width: 768px) {
+
+  .all_categorry__filter select,
+  .all_items__filter select,
+  .filter__right select {
+    padding: 5px 20px;
+    /* define uma distancia entre o conteudo de um elemento e suas bordas*/
+    font-size: .6rem;
+  }
+
+}
