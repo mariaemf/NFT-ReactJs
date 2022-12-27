@@ -1,0 +1,30 @@
+.single__nft-img {
+  border-radius: 8px;
+}
+
+.single__nft-seen span i {
+  color: #fff;
+  padding: 5px;
+  /* defini distancia entre p conteudo de um elemento e suas bordas*/
+  background: #000;
+  border-radius: 50px;
+  /*par aarredondar borda*/
+  cursor: pointer;
+}
+
+.single__nft-seen span,
+.single__nft-more span {
+  color: #fff;
+  font-size: .8rem;
+  /*altera o tamanho da letra*/
+}
+
+.single__nft-more span i {
+  background: #343434;
+  padding: 5px;
+  /* defini distancia entre p conteudo de um elemento e suas bordas*/
+  background: #000;
+  border-radius: 50px;
+  /*par aarredondar borda*/
+  cursor: pointer;
+}
