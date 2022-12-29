@@ -1,6 +1,8 @@
 import React from "react";
-import { Container } from "reactstrap";
+
 import "./common-section.css";
+
+import { Container } from "reactstrap";
 
 const CommonSection = ({ title }) => {
   return (

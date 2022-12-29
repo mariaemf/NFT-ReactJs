@@ -9,6 +9,7 @@ import Home from "../pages/Home";
 import Market from "../pages/Market";
 import NftDetails from "../pages/NftDetails";
 import SellerProfile from "../pages/SellerProfile";
+import Wallet from "../pages/Wallet";
 
 const Routers = () => {
   return (
@@ -21,10 +22,10 @@ const Routers = () => {
       <Route path="/seller-profile" element={<SellerProfile />} />
       <Route path="/edit-profile" element={<EditProfile />} />
       <Route path="/market/:id" element={<NftDetails />} />
+
+      <Route path="/wallet" element={<Wallet />} />
     </Routes>
   );
 };
 
 export default Routers;
-
-/* <Route path="/wallet" element={<Wallet />} /> */
